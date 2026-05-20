@@ -10,13 +10,20 @@ declenche.addEventListener("click", () => {
   right.style.right = "-110%";
   const t = setInterval(() => {
     txtLogo.style.top = "40%";
-  }, 1500);
+  }, 1000);
 
   const s = setInterval(() => {
-    introDiv.style.top = "100vh";
+    introDiv.style.top = "-100%";
     introDiv.style.opacity = "0";
     const u = setInterval(() => {
       introDiv.style.display = "none";
+      appDiv.style.display = "block";
+      const v = setInterval(() => {
+        appDiv.style.marginTop = "0";
+        const u = setInterval(() => {
+          appDiv.style.opacity = "1";
+        }, 300);
+      }, 500);
     }, 1000);
-  }, 3500);
+  }, 2500);
 });
