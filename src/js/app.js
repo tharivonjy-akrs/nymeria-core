@@ -15,7 +15,7 @@ menuButtonOpen.addEventListener("click", () => {
 
 menuButtonClose.addEventListener("click", () => {
   document.body.style.overflowY = "scroll";
-  menuToggle.style.top = "-35vh";
+  menuToggle.style.top = "-80vh";
   black.style.background = "none";
   menuButtonOpen.style.display = "flex";
   menuButtonClose.style.display = "none";
